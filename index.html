@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/icon-cyber.png" type="image/x-icon" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/myavatar.jpg" alt="" width="80" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name">Roki Hendrawan</h1>
+
+          <p class="title">Cybersecurity Enthusiasts</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rockyhendrawan03@gmail.com" class="contact-link">rockyhendrawan03@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+6287752427260" class="contact-link">+62 87752427370</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-04-04">April 04, 2003</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Genteng, Lombok, NTB</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://facebook.com/Rkyhndrwn" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://wa.me/6287752427260" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/whoami_.ky" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="https://drive.google.com/file/d/1OdoRAR5DWqzuL93sEJlkFJVbortBk1UX/view?usp=sharing"><button
+                class="navbar-link active" data-nav-link>
+                Download My CV
+              </button></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I, Roki Hendrawan, i'am a passionate, diligent and curious person
+            who is ready to bring positive energy to the professional world.
+            With an educational background in information technology with
+            cyber security competencies, I have gained a strong understanding
+            of the world of technology and skills and a great interest in
+            cyber security needed to thrive in today's industrial 4.0 world.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cybersecurity</h4>
+
+                <p class="service-item-text">
+                  Defending systems and networks from threats.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Building the look of a site and its banckend.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">System Administrator</h4>
+
+                <p class="service-item-text">
+                  Build a system with linux kernel.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Network Administrator</h4>
+
+                <p class="service-item-text">
+                  Build a fast and secure network.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <header>
+          <h2 class="h2 article-title">My Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bumigora University</h4>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+                I continued my studies at Bumigora University with a major in information technology with cybersecurity
+                competency.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SMK Qamarul Huda Bagu</h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                I am a vocational high school graduate with a major in computer and network engineering, who was taught
+                to understand the basics of computer and network systems.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">IT Support</h4>
+
+              <span>2020</span>
+
+              <p class="timeline-text">
+                I had an internship at a company engaged in IT equipment that has government and private agency
+                customers, and there I served as IT support.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <header>
+          <h2 class="h2 article-title">My Certificate</h2>
+        </header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item active">
+              <a href="https://drive.google.com/file/d/19cQQZRZTH0uxdXRXsI3jmE07H1fCnK56/view?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ECC-CND-ANSI-Certificate.jpg" alt="" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Certified Network Defender</h3>
+
+                <p class="project-category">Network Defender</p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="https://drive.google.com/file/d/1luOkcCScJmxMlObgZMZVF9CdQ-nckwe-/view?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ECC-ECIH-ANSI-Certificate.jpg" alt="" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">ECC Certified Incident Handler</h3>
+
+                <p class="project-category">Incident Handler</p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="https://drive.google.com/file/d/1i4JcMgEHsdetlsS8ZfFwQYn7OmO9BZ90/view?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Redhat.jpg" alt="" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Redhat (RH294)</h3>
+
+                <p class="project-category">Automation System</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <hr style="margin-top: 40px; margin-bottom: 20px" />
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126227.0665943974!2d116.1355532625!3d-8.634741999999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb7cef5910b41%3A0x844f1105c6a1cc96!2sDusun%20Genteng%20Desa%20Pagutan%20kec.batukliang!5e0!3m2!1sen!2ssg!4v1719757879027!5m2!1sen!2ssg"
+              width="600" height="450" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form" id="contactForm">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" autocomplete="off">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" id="name" placeholder="Full name" required />
+
+              <input type="text" name="phone" class="form-input" id="phone" pattern="[0-9]+"
+                placeholder="Your whatsapp number 08XXXXXXX" required />
+            </div>
+
+            <textarea name="message" class="form-input" id="message" placeholder="Your Message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      Sending();
+    });
+
+    function Sending() {
+      var name = document.getElementById('name').value;
+      var phone = document.getElementById('phone').value;
+      var message = document.getElementById('message').value;
+
+      var telegramToken = '6623273680:AAHwTrNhrD9DD9sdkj6Sd3H_nYXK9vSlzfA';
+      var chatId = '6724227071';
+
+      var text = `Name: ${name}\nNO. WA: ${phone}\nMessage: ${message}`;
+
+      fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: text
+        })
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.ok) {
+            Swal.fire({
+              icon: 'success',
+              title: 'Success!',
+              text: 'Your message sent successfully!'
+            }).then((result) => {
+              if (result.isConfirmed) {
+                history.replaceState(null, '', 'index.html');
+                location.reload();
+              }
+            });
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Failed to send message.'
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Error sending message.'
+          });
+        });
+    }
+  </script>
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
