@@ -400,8 +400,8 @@
 
       var telegramToken = '6623273680:AAHwTrNhrD9DD9sdkj6Sd3H_nYXK9vSlzfA';
       var chatId = '6724227071';
-
-      var text = `Name: ${name}\nNO. WA: wa.me/${phone}\nMessage: ${message}`;
+      phone = phone.replace(/^0+/, '');
+      var text = `Name: ${name}\nNO. WA: wa.me/62${phone}\nMessage: ${message}`;
 
       fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
         method: 'POST',
